@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<body>
+    <h2>Welcome {{name}}</h2>
+    <h3>To book a car with us, please fill the following details.</h3>
+    <form action="" method="post">
+        {% csrf_token %}
+        Name : <input type="text" name="name" ><br><br>
+        Email : <input type="text" name = "email"><br><br>
+        Phone : <input type="text" name="phone" ><br><br>
+        PickUp Date : <input type="text" name = "pickup_date"><br><br>
+        Dropoff Date : <input type="text" name="dropoff_date" ><br><br>
+        Pickup Time : <input type="text" name = "pickup_time"><br><br>
+        Dropoff Time : <input type="text" name="dropoff_time" ><br><br>
+        Pickup Address : <input type="text" name = "pickup_add"><br><br>
+        Dropoff Time : <input type="text" name="dropoff_add" ><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
